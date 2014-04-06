@@ -22,12 +22,8 @@
             'class'=>'bootstrap.widgets.TbMenu',
             'items'=>array(
                 array('label'=>'Home', 'url'=>array('/')),
-                //array('label'=>'Sobre', 'url'=>array('/site/page', 'view'=>'about')),
 				array('label'=>'Usuário', 'url'=>array('/user/index')),
-				//array('label'=>'Fornecedor', 'url'=>array('/provider/index')),
-				//array('label'=>'Matéria-Prima', 'url'=>array('/feedstock/index')),
-				//array('label'=>'Peças', 'url'=>array('/clothing/index')),
-                //array('label'=>'Contato', 'url'=>array('/site/contact')),
+				array('label'=>'Cadastro', 'url'=>array('/bigdate/create')),				
                 array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
                 array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
             ),

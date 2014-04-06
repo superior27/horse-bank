@@ -85,8 +85,12 @@
 		<?php echo $form->error($model,'commission'); ?>
 	</div>
 
-	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+	<div class="">
+		<?php $this->widget('bootstrap.widgets.TbButton', array(
+            'buttonType'=>'submit',
+            'type'=>'info',
+            'label'=>'Cadastrar',
+        )); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

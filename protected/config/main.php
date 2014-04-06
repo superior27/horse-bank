@@ -9,7 +9,7 @@ Yii::setPathOfAlias('bootstrap', dirname(__FILE__).'/../extensions/bootstrap');
 return array(
 
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'Vidal Acessoria',
+	'name'=>'Vidal Assessoria',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -63,10 +63,10 @@ return array(
 		// uncomment the following to use a MySQL database
 		
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=horse-bank',
+			'connectionString' => 'mysql:host=localhost;dbname=comms318_horse-bank',
 			'emulatePrepare' => true,
-			'username' => 'root',
-			'password' => '123',
+			'username' => 'comms318_lucas',
+			'password' => 'e$%Z*C4TNp[#',
 			'charset' => 'utf8',
 		),
 		
