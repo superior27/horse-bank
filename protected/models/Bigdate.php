@@ -63,17 +63,17 @@ class Bigdate extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'name_client' => 'Name Client',
+			'name_client' => 'Nome',
 			'cpf' => 'Cpf',
-			'table' => 'Table',
-			'agreement' => 'Agreement',
-			'contract' => 'Contract',
-			'emission_date' => 'Emission Date',
-			'liberation_date' => 'Liberation Date',
-			'term' => 'Term',
+			'table' => 'Tabela',
+			'agreement' => 'Convênio',
+			'contract' => 'Contrato',
+			'emission_date' => 'Data de Emissão',
+			'liberation_date' => 'Data de Liberação',
+			'term' => 'Prazo',
 			'status' => 'Status',
-			'value' => 'Value',
-			'commission' => 'Commission',
+			'value' => 'Valor',
+			'commission' => 'Comissão',
 		);
 	}
 

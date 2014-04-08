@@ -664,3 +664,39 @@ Stack trace:
 REQUEST_URI=/workspace_php/horse-bank/index.php/user/index
 HTTP_REFERER=http://localhost/workspace_php/horse-bank/index.php
 ---
+2014/04/06 12:34:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "user/index".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/index')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\workspace_php\horse-bank\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/workspace_php/horse-bank/index.php/user/index
+HTTP_REFERER=http://localhost/workspace_php/horse-bank/index.php/bigdate/create
+---
+2014/04/07 09:11:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "user/index".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/index')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\workspace_php\horse-bank\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/workspace_php/horse-bank/index.php/user/index
+HTTP_REFERER=http://localhost/workspace_php/horse-bank/index.php
+---
+2014/04/07 22:47:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "user/index".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/index')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\workspace_php\horse-bank\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/workspace_php/horse-bank/index.php/user/index
+HTTP_REFERER=http://localhost/workspace_php/horse-bank/index.php
+---
+2014/04/07 22:48:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "user/index".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/index')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\workspace_php\horse-bank\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/workspace_php/horse-bank/index.php/user/index
+HTTP_REFERER=http://localhost/workspace_php/horse-bank/index.php
+---

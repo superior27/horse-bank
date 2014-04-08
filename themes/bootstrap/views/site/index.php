@@ -8,9 +8,9 @@ $this->pageTitle=Yii::app()->name;
     'heading'=>' '.CHtml::encode(Yii::app()->name),
 )); ?>
 <?php $this->endWidget(); ?>
-<center>
+<!--<center>
 		<img src="images/vidal.png">
-	</center>
+	</center> -->
 <!--
 <p>Congratulations! You have successfully created your Yii application.</p>
 
