@@ -4,7 +4,6 @@
 
 
 ?>
-
-<h1>Atualizar <?php echo $model->id; ?></h1>
+<h1>Atualizar <?php echo $model->name_client; ?></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

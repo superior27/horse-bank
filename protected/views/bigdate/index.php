@@ -3,7 +3,6 @@
 /* @var $dataProvider CActiveDataProvider */
 
 
-
 ?>
 
 <h1>Administrar</h1>

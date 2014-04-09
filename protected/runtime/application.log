@@ -700,3 +700,83 @@ Stack trace:
 REQUEST_URI=/workspace_php/horse-bank/index.php/user/index
 HTTP_REFERER=http://localhost/workspace_php/horse-bank/index.php
 ---
+2014/04/08 21:29:45 [error] [exception.CException] exception 'CException' with message 'A coluna deve ser especificada no formato "Nome:Tipo:Etiqueta", onde "Tipo" e "Etiqueta" são opcionais.' in C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php:412
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php(383): CGridView->createDataColumn('Conv??nio')
+#1 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php(359): CGridView->initColumns()
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(147): CGridView->init()
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.gri...', Array)
+#4 C:\xampp\htdocs\workspace_php\horse-bank\protected\views\bigdate\admin.php(51): CBaseController->widget('zii.widgets.gri...', Array)
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#9 C:\xampp\htdocs\workspace_php\horse-bank\protected\controllers\BigdateController.php(143): CController->render('admin', Array)
+#10 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): BigdateController->actionAdmin()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bigdate/admin')
+#21 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\workspace_php\horse-bank\index.php(15): CApplication->run()
+#23 {main}
+REQUEST_URI=/workspace_php/horse-bank/index.php/bigdate/admin
+HTTP_REFERER=http://localhost/workspace_php/horse-bank/index.php/bigdate/create
+---
+2014/04/08 21:37:08 [error] [php] Undefined variable: model (C:\xampp\htdocs\workspace_php\horse-bank\themes\bootstrap\views\site\login.php:29)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\xampp\htdocs\workspace_php\horse-bank\protected\controllers\SiteController.php(32): SiteController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\workspace_php\horse-bank\index.php(15): CWebApplication->run()
+REQUEST_URI=/workspace_php/horse-bank/index.php
+in C:\xampp\htdocs\workspace_php\horse-bank\themes\bootstrap\views\site\login.php (29)
+in C:\xampp\htdocs\workspace_php\horse-bank\protected\controllers\SiteController.php (32)
+in C:\xampp\htdocs\workspace_php\horse-bank\index.php (15)
+2014/04/08 21:38:42 [error] [php] strpos() expects parameter 1 to be string, array given (C:\xampp\htdocs\yii\framework\web\CController.php:706)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(586): CTheme->getViewFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(867): SiteController->getViewFile()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\xampp\htdocs\workspace_php\horse-bank\protected\controllers\SiteController.php(32): SiteController->render()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\workspace_php\horse-bank\index.php(15): CWebApplication->run()
+REQUEST_URI=/workspace_php/horse-bank/index.php
+in C:\xampp\htdocs\workspace_php\horse-bank\protected\controllers\SiteController.php (32)
+in C:\xampp\htdocs\workspace_php\horse-bank\index.php (15)
+2014/04/08 21:39:02 [error] [php] Undefined variable: model (C:\xampp\htdocs\workspace_php\horse-bank\themes\bootstrap\views\site\login.php:29)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\xampp\htdocs\workspace_php\horse-bank\protected\controllers\SiteController.php(32): SiteController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\workspace_php\horse-bank\index.php(15): CWebApplication->run()
+REQUEST_URI=/workspace_php/horse-bank/index.php
+in C:\xampp\htdocs\workspace_php\horse-bank\themes\bootstrap\views\site\login.php (29)
+in C:\xampp\htdocs\workspace_php\horse-bank\protected\controllers\SiteController.php (32)
+in C:\xampp\htdocs\workspace_php\horse-bank\index.php (15)

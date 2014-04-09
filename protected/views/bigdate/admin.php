@@ -32,20 +32,20 @@ or <b>=</b>) no início de cada um dos seus valores de pesquisa para especificar
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
 	'columns'=>array(
-		'id',
+		
 		'name_client',
 		'cpf',
 		'table',
 		'agreement',
 		'contract',
-		/*
+		
 		'emission_date',
 		'liberation_date',
 		'term',
 		'status',
 		'value',
 		'commission',
-		*/
+		
 		array(
 			'class'=>'CButtonColumn',
 		),
