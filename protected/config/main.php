@@ -39,6 +39,12 @@ return array(
 
 	// application components
 	'components'=>array(
+
+		'authManager'=>array(
+			"class"=>"CDbAuthManager",
+			"connectionID"=>"db",
+			),
+		
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
@@ -100,4 +106,5 @@ return array(
 
 	'sourceLanguage'=>'pt_br',
 	'language'=>'pt_br',
+	
 );

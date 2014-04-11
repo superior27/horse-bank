@@ -51,13 +51,13 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'emission_date'); ?>
-		<?php echo $form->textField($model,'emission_date'); ?>
+		<?php echo $form->dateField($model,'emission_date'); ?>
 		<?php echo $form->error($model,'emission_date'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'liberation_date'); ?>
-		<?php echo $form->textField($model,'liberation_date'); ?>
+		<?php echo $form->dateField($model,'liberation_date'); ?>
 		<?php echo $form->error($model,'liberation_date'); ?>
 	</div>
 

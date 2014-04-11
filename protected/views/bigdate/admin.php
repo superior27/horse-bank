@@ -27,7 +27,8 @@ or <b>=</b>) no início de cada um dos seus valores de pesquisa para especificar
 
 
 
-<?php $this->widget('zii.widgets.grid.CGridView', array(
+<?php $this->widget('bootstrap.widgets.TbGridView', array(
+	'type'=>'striped bordered condensed',
 	'id'=>'bigdate-grid',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,

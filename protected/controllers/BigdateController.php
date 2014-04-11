@@ -37,7 +37,7 @@ class BigdateController extends Controller
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
+				'users'=>array('@'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -122,6 +122,7 @@ class BigdateController extends Controller
 	 */
 	public function actionIndex()
 	{
+		//Yii::app()->authManager->createRole("admin");
 		$dataProvider=new CActiveDataProvider('Bigdate');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
