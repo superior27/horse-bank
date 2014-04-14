@@ -70,9 +70,12 @@ class BigdateController extends Controller
 		if(isset($_POST['Bigdate']))
 		{
 			$model->attributes=$_POST['Bigdate'];
-			if($model->save())
+			if($model->save()){
+				$model->commission_value = $model->value*$model->commission/100;
+				$model->update();
 				$this->redirect(array('view','id'=>$model->id));
 		}
+	}
 
 		$this->render('create',array(
 			'model'=>$model,
@@ -94,10 +97,12 @@ class BigdateController extends Controller
 		if(isset($_POST['Bigdate']))
 		{
 			$model->attributes=$_POST['Bigdate'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+			if($model->save()){
+				$model->commission_value = $model->value*$model->commission/100;
+				$model->update();
+				$this->redirect(array('admin'));
 		}
-
+}
 		$this->render('update',array(
 			'model'=>$model,
 		));

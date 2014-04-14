@@ -5,9 +5,18 @@ $this->pageTitle=Yii::app()->name;
 ?>
 
 <?php $this->beginWidget('bootstrap.widgets.TbHeroUnit',array(
-    'heading'=>' '.CHtml::encode(Yii::app()->name),
+    'heading'=>' '.CHtml::encode('Bem-Vindo'),
 )); ?>
 <?php $this->endWidget(); ?>
+<!-- Docs page layout -->
+
+  
+ <!-- <div class="row-fluid div1" >
+ <div class="span4"><p><h1>Bem-Vindo</h1></p></div>
+  <div class="offset4 span4"><img src = "images/vidal.png" /></div>
+  </div> -->
+
+
 <!--<center>
 		<img src="images/vidal.png">
 	</center> -->

@@ -2,9 +2,6 @@
 /* @var $this BigdateController */
 /* @var $model Bigdate */
 
-
-
-
 ?>
 
 <h1>Cadastrar Cliente</h1>

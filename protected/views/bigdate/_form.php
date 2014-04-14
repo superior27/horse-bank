@@ -88,7 +88,7 @@
 	<div class="">
 		<?php $this->widget('bootstrap.widgets.TbButton', array(
             'buttonType'=>'submit',
-            'type'=>'info',
+            'type'=>'action',
             'label'=>'Cadastrar',
         )); ?>
 	</div>

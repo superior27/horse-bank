@@ -22,10 +22,14 @@
             'class'=>'bootstrap.widgets.TbMenu',
             'items'=>array(
                 array('label'=>'Home', 'url'=>array('/')),				
-				array('label'=>'Administrar', 'url'=>'#', 'items'=>array(
+				array('label'=>'Clientes', 'url'=>'#', 'items'=>array(
                     array('label'=>'Cadastrar', 'url'=>array('/bigdate/create')),
-                    array('label'=>'Gerenciar', 'url'=>array('/bigdate/admin')),
-                    )),				
+                    array('label'=>'Administrar', 'url'=>array('/bigdate/admin')),
+                    )),			
+                array('label'=>'Usuários', 'url'=>'#', 'items'=>array(
+                    array('label'=>'Cadastrar', 'url'=>array('/user/create')),
+                    array('label'=>'Administrar', 'url'=>array('/user/admin')),
+                    )),		
                 array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
                 array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
             ),

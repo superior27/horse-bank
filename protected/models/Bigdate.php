@@ -16,6 +16,7 @@
  * @property string $status
  * @property double $value
  * @property double $commission
+ * @property double $commission_value
  */
 class Bigdate extends CActiveRecord
 {
@@ -36,12 +37,12 @@ class Bigdate extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('name_client, cpf', 'required'),
-			array('value, commission', 'numerical'),
+			array('value, commission, commission_value', 'numerical'),
 			array('name_client, cpf, table, agreement, contract, term, status', 'length', 'max'=>45),
 			array('emission_date, liberation_date', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, name_client, cpf, table, agreement, contract, emission_date, liberation_date, term, status, value, commission', 'safe', 'on'=>'search'),
+			array('id, name_client, cpf, table, agreement, contract, emission_date, liberation_date, term, status, value, commission, commission_value', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -63,17 +64,19 @@ class Bigdate extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'name_client' => 'Nome',
+			'name_client'=>'Nome',
 			'cpf' => 'Cpf',
-			'table' => 'Tabela',
+			'table'=> 'Tabela',
 			'agreement' => 'Convênio',
-			'contract' => 'Contrato',
+			'contract'=>'Nº Contrato',
+		
 			'emission_date' => 'Data de Emissão',
 			'liberation_date' => 'Data de Liberação',
 			'term' => 'Prazo',
 			'status' => 'Status',
 			'value' => 'Valor',
-			'commission' => 'Comissão',
+			'commission' => 'Comissão %',
+			'commission_value' => 'Comissão',
 		);
 	}
 
@@ -107,6 +110,7 @@ class Bigdate extends CActiveRecord
 		$criteria->compare('status',$this->status,true);
 		$criteria->compare('value',$this->value);
 		$criteria->compare('commission',$this->commission);
+		$criteria->compare('commission_value',$this->commission_value);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

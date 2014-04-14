@@ -4,9 +4,7 @@
 /* @var $form CActiveForm  */
 
 $this->pageTitle=Yii::app()->name . ' - Login';
-$this->breadcrumbs=array(
-	'Login',
-);
+
 ?>
 
 <h1>Login</h1>
@@ -34,10 +32,10 @@ $this->breadcrumbs=array(
 
 	<?php echo $form->checkBoxRow($model,'rememberMe'); ?>
 
-	<div class="">
+	<div class="form-actions">
 		<?php $this->widget('bootstrap.widgets.TbButton', array(
             'buttonType'=>'submit',
-            'type'=>'info',
+            'type'=>'action',
             'label'=>'Entrar',
         )); ?>
 	</div>
