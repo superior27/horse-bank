@@ -36,7 +36,7 @@ class UserController extends Controller
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'roles'=>array('Admin',),
+				'roles'=>array('admin',),
 				'actions'=>array('admin','delete','assign',),
 				'users'=>array('lucas'),
 			),
