@@ -10,10 +10,10 @@ $this->pageTitle=Yii::app()->name;
 <?php $this->endWidget(); ?>
 <!-- Docs page layout -->
 
-  
+  <br>
   <div class="row-fluid div1" >
- <div class="span4"><p><h1>Bem-Vindo</h1></p></div>
-  <div class="offset4 span4"><img src = "images/vidal.png" /></div>
+ <!--<div class="span4"><p><h1>Bem-Vindo</h1></p></div>-->
+  <div class="offset4 span8"><img src = "images/vidal.png" /></div>
   </div> 
 
 
