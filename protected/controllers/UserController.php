@@ -31,14 +31,14 @@ class UserController extends Controller
 				'actions'=>array('index','view'),
 				'users'=>array('@'),
 			),
-			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
-				'users'=>array('@'),
-			),
+			//array('allow', // allow authenticated user to perform 'create' and 'update' actions
+				//'actions'=>array('create','update'),
+			//	'users'=>array('@'),
+			//),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'roles'=>array('admin',),
-				'actions'=>array('admin','delete','assign',),
-				'users'=>array('lucas'),
+				'actions'=>array('admin','delete','assign','create','update'),
+				//'users'=>array('lucas'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
