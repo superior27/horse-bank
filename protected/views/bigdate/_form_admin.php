@@ -85,7 +85,11 @@
 		<?php echo $form->error($model,'value'); ?>
 	</div>
 
-	
+	<div class="row">
+		<?php echo $form->labelEx($model,'commission'); ?>
+		<?php echo $form->textField($model,'commission'); ?>
+		<?php echo $form->error($model,'commission'); ?>
+	</div>
 
 	<div class="">
 		<?php $this->widget('bootstrap.widgets.TbButton', array(

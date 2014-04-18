@@ -25,6 +25,7 @@
 				array('label'=>'Clientes', 'url'=>'#', 'items'=>array(
                     array('label'=>'Cadastrar', 'url'=>array('/bigdate/create')),
                     array('label'=>'Administrar', 'url'=>array('/bigdate/admin')),
+                    array('label'=>'Administrar(Funcionário)', 'url'=>array('/bigdate/adminfunctionary')),
                     )),			
                 array('label'=>'Usuários', 'url'=>'#', 'items'=>array(
                     array('label'=>'Cadastrar', 'url'=>array('/user/create')),

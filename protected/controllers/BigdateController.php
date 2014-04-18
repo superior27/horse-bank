@@ -28,16 +28,16 @@ class BigdateController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index',),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create',),
+				'actions'=>array('create','adminFunctionary'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'roles'=>array('admin'),
-				'actions'=>array('admin','delete','update'),
+				'actions'=>array('admin','delete','update','view',),
 				//'users'=>array('@'),
 			),
 			array('deny',  // deny all users
@@ -146,6 +146,18 @@ class BigdateController extends Controller
 			$model->attributes=$_GET['Bigdate'];
 
 		$this->render('admin',array(
+			'model'=>$model,
+		));
+	}
+
+		public function actionAdminFunctionary()
+	{
+		$model=new Bigdate('search');
+		$model->unsetAttributes();  // clear any default values
+		if(isset($_GET['Bigdate']))
+			$model->attributes=$_GET['Bigdate'];
+
+		$this->render('admin_functionary',array(
 			'model'=>$model,
 		));
 	}

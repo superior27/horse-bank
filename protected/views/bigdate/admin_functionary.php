@@ -45,8 +45,7 @@ or <b>=</b>) no início de cada um dos seus valores de pesquisa para especificar
 		'term',
 		'status',
 		'value',
-		'commission',
-		'commission_value',
+		
 		
 		array(
  	 	'class'=>'bootstrap.widgets.TbButtonColumn',

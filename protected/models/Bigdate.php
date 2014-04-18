@@ -7,6 +7,7 @@
  * @property integer $id
  * @property string $name_client
  * @property string $cpf
+ * @property string $phone
  * @property string $table
  * @property string $agreement
  * @property string $contract
@@ -39,10 +40,11 @@ class Bigdate extends CActiveRecord
 			array('name_client, cpf', 'required'),
 			array('value, commission, commission_value', 'numerical'),
 			array('name_client, cpf, table, agreement, contract, term, status', 'length', 'max'=>45),
+			array('phone', 'length', 'max'=>255),
 			array('emission_date, liberation_date', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, name_client, cpf, table, agreement, contract, emission_date, liberation_date, term, status, value, commission, commission_value', 'safe', 'on'=>'search'),
+			array('id, name_client, cpf, phone, table, agreement, contract, emission_date, liberation_date, term, status, value, commission, commission_value', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -64,19 +66,19 @@ class Bigdate extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'name_client'=>'Nome',
+			'name_client' => 'Name Client',
 			'cpf' => 'Cpf',
-			'table'=> 'Tabela',
-			'agreement' => 'Convênio',
-			'contract'=>'Nº Contrato',
-		
-			'emission_date' => 'Data de Emissão',
-			'liberation_date' => 'Data de Liberação',
-			'term' => 'Prazo',
+			'phone' => 'Phone',
+			'table' => 'Table',
+			'agreement' => 'Agreement',
+			'contract' => 'Contract',
+			'emission_date' => 'Emission Date',
+			'liberation_date' => 'Liberation Date',
+			'term' => 'Term',
 			'status' => 'Status',
-			'value' => 'Valor',
-			'commission' => 'Comissão %',
-			'commission_value' => 'Comissão',
+			'value' => 'Value',
+			'commission' => 'Commission',
+			'commission_value' => 'Commission Value',
 		);
 	}
 
@@ -101,6 +103,7 @@ class Bigdate extends CActiveRecord
 		$criteria->compare('id',$this->id);
 		$criteria->compare('name_client',$this->name_client,true);
 		$criteria->compare('cpf',$this->cpf,true);
+		$criteria->compare('phone',$this->phone,true);
 		$criteria->compare('table',$this->table,true);
 		$criteria->compare('agreement',$this->agreement,true);
 		$criteria->compare('contract',$this->contract,true);
