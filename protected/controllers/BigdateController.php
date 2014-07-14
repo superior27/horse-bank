@@ -6,7 +6,7 @@ class BigdateController extends Controller
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
 	 */
-	public $layout='//layouts/column1';
+	public $layout='//layouts/column2';
 
 	/**
 	 * @return array action filters
@@ -28,17 +28,16 @@ class BigdateController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index',),
+				'actions'=>array('index','view'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','adminFunctionary'),
+				'actions'=>array('create','update'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'roles'=>array('admin'),
-				'actions'=>array('admin','delete','update','view',),
-				//'users'=>array('@'),
+				'actions'=>array('admin','delete'),
+				'users'=>array('admin'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -71,12 +70,9 @@ class BigdateController extends Controller
 		if(isset($_POST['Bigdate']))
 		{
 			$model->attributes=$_POST['Bigdate'];
-			if($model->save()){
-				$model->commission_value = $model->value*$model->commission/100;
-				$model->update();
+			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
-	}
 
 		$this->render('create',array(
 			'model'=>$model,
@@ -98,12 +94,10 @@ class BigdateController extends Controller
 		if(isset($_POST['Bigdate']))
 		{
 			$model->attributes=$_POST['Bigdate'];
-			if($model->save()){
-				$model->commission_value = $model->value*$model->commission/100;
-				$model->update();
-				$this->redirect(array('admin'));
+			if($model->save())
+				$this->redirect(array('view','id'=>$model->id));
 		}
-}
+
 		$this->render('update',array(
 			'model'=>$model,
 		));
@@ -128,7 +122,6 @@ class BigdateController extends Controller
 	 */
 	public function actionIndex()
 	{
-		//Yii::app()->authManager->createRole("admin");
 		$dataProvider=new CActiveDataProvider('Bigdate');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
@@ -146,18 +139,6 @@ class BigdateController extends Controller
 			$model->attributes=$_GET['Bigdate'];
 
 		$this->render('admin',array(
-			'model'=>$model,
-		));
-	}
-
-		public function actionAdminFunctionary()
-	{
-		$model=new Bigdate('search');
-		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['Bigdate']))
-			$model->attributes=$_GET['Bigdate'];
-
-		$this->render('admin_functionary',array(
 			'model'=>$model,
 		));
 	}
