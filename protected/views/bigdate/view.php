@@ -7,14 +7,7 @@ $this->breadcrumbs=array(
 	$model->id,
 );
 
-$this->menu=array(
-	array('label'=>'List Bigdate', 'url'=>array('index')),
-	array('label'=>'Create Bigdate', 'url'=>array('create')),
-	array('label'=>'Update Bigdate', 'url'=>array('update', 'id'=>$model->id)),
-	array('label'=>'Delete Bigdate', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Bigdate', 'url'=>array('admin')),
-);
-?>
+
 
 <h1>View Bigdate #<?php echo $model->id; ?></h1>
 

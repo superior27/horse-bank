@@ -3,14 +3,10 @@
 /* @var $model Bigdate */
 
 $this->breadcrumbs=array(
-	'Bigdates'=>array('index'),
-	'Create',
+	'Cadastrar Cliente'=>array('index'),
+	'Cadastrar',
 );
 
-$this->menu=array(
-	array('label'=>'List Bigdate', 'url'=>array('index')),
-	array('label'=>'Manage Bigdate', 'url'=>array('admin')),
-);
 ?>
 
 <h1>Cadastrar Cliente</h1>

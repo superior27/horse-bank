@@ -19,19 +19,19 @@
 
 	<?php echo $form->errorSummary($model); ?>
 
-	<div class="row">
+	<div class="row-fluid">
 		<?php echo $form->labelEx($model,'username'); ?>
 		<?php echo $form->textField($model,'username',array('size'=>60,'maxlength'=>128)); ?>
 		<?php echo $form->error($model,'username'); ?>
 	</div>
 
-	<div class="row">
+	<div class="row-fluid">
 		<?php echo $form->labelEx($model,'password'); ?>
 		<?php echo $form->passwordField($model,'password',array('size'=>60,'maxlength'=>128)); ?>
 		<?php echo $form->error($model,'password'); ?>
 	</div>
 
-	<div class="row">
+	<div class="row-fluid">
 		<?php echo $form->labelEx($model,'email'); ?>
 		<?php echo $form->textField($model,'email',array('size'=>60,'maxlength'=>128)); ?>
 		<?php echo $form->error($model,'email'); ?>

@@ -18,7 +18,7 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1>Administrar</h1>
+<h1>Relatório Usuário</h1>
 
 <p>
 Você pode, opcionalmente, digitar um operador de comparação (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>

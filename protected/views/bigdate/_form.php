@@ -19,91 +19,85 @@
 
 	<?php echo $form->errorSummary($model); ?>
 
-	<div class="row">
+	<div class="row-fluid">
 		<?php echo $form->labelEx($model,'name_client'); ?>
 		<?php echo $form->textField($model,'name_client',array('size'=>45,'maxlength'=>45)); ?>
 		<?php echo $form->error($model,'name_client'); ?>
-	</div>
-
-	<div class="row">
+</div>
+<div class="row-fluid">
 		<?php echo $form->labelEx($model,'nick_name'); ?>
 		<?php echo $form->textField($model,'nick_name',array('size'=>60,'maxlength'=>256)); ?>
 		<?php echo $form->error($model,'nick_name'); ?>
 	</div>
 
-	<div class="row">
+	<div class="row-fluid">
 		<?php echo $form->labelEx($model,'cpf'); ?>
 		<?php echo $form->textField($model,'cpf',array('size'=>45,'maxlength'=>45)); ?>
 		<?php echo $form->error($model,'cpf'); ?>
 	</div>
 
-	<div class="row">
+	<div class="row-fluid">
 		<?php echo $form->labelEx($model,'phone'); ?>
 		<?php echo $form->textField($model,'phone',array('size'=>60,'maxlength'=>255)); ?>
 		<?php echo $form->error($model,'phone'); ?>
 	</div>
 
-	<div class="row">
+	<div class="row-fluid">
 		<?php echo $form->labelEx($model,'table'); ?>
 		<?php echo $form->textField($model,'table',array('size'=>45,'maxlength'=>45)); ?>
 		<?php echo $form->error($model,'table'); ?>
 	</div>
 
-	<div class="row">
+	<div class="row-fluid">
 		<?php echo $form->labelEx($model,'agreement'); ?>
 		<?php echo $form->textField($model,'agreement',array('size'=>45,'maxlength'=>45)); ?>
 		<?php echo $form->error($model,'agreement'); ?>
 	</div>
 
-	<div class="row">
+	<div class="row-fluid">
 		<?php echo $form->labelEx($model,'contract'); ?>
 		<?php echo $form->textField($model,'contract',array('size'=>45,'maxlength'=>45)); ?>
 		<?php echo $form->error($model,'contract'); ?>
 	</div>
 
-	<div class="row">
+	<div class="row-fluid">
 		<?php echo $form->labelEx($model,'emission_date'); ?>
 		<?php echo $form->textField($model,'emission_date'); ?>
 		<?php echo $form->error($model,'emission_date'); ?>
 	</div>
 
-	<div class="row">
+	<div class="row-fluid">
 		<?php echo $form->labelEx($model,'liberation_date'); ?>
 		<?php echo $form->textField($model,'liberation_date'); ?>
 		<?php echo $form->error($model,'liberation_date'); ?>
 	</div>
 
-	<div class="row">
+	<div class="row-fluid">
 		<?php echo $form->labelEx($model,'term'); ?>
 		<?php echo $form->textField($model,'term',array('size'=>45,'maxlength'=>45)); ?>
 		<?php echo $form->error($model,'term'); ?>
 	</div>
 
-	<div class="row">
+	<div class="row-fluid">
 		<?php echo $form->labelEx($model,'status'); ?>
 		<?php echo $form->textField($model,'status',array('size'=>45,'maxlength'=>45)); ?>
 		<?php echo $form->error($model,'status'); ?>
 	</div>
 
-	<div class="row">
+	<div class="row-fluid">
 		<?php echo $form->labelEx($model,'value'); ?>
 		<?php echo $form->textField($model,'value'); ?>
 		<?php echo $form->error($model,'value'); ?>
 	</div>
 
-	<div class="row">
+	<div class="row-fluid">
 		<?php echo $form->labelEx($model,'commission'); ?>
 		<?php echo $form->textField($model,'commission'); ?>
 		<?php echo $form->error($model,'commission'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'commission_value'); ?>
-		<?php echo $form->textField($model,'commission_value'); ?>
-		<?php echo $form->error($model,'commission_value'); ?>
-	</div>
-
-	<div class="row">
+	
+	<div class="row-fluid">
 	<?php echo $form->labelEx($model,'bank');
  	$select =array('empty');
     echo $form->dropDownList($model, 'bank',
@@ -111,37 +105,37 @@
  	array('empty' => '(Escolha um Banco)'));?>
 </div>
 
-	<div class="row">
+	<div class="row-fluid">
 		<?php echo $form->labelEx($model,'address'); ?>
 		<?php echo $form->textField($model,'address',array('size'=>60,'maxlength'=>255)); ?>
 		<?php echo $form->error($model,'address'); ?>
 	</div>
 
-	<div class="row">
+	<div class="row-fluid">
 		<?php echo $form->labelEx($model,'complement'); ?>
 		<?php echo $form->textField($model,'complement',array('size'=>45,'maxlength'=>45)); ?>
 		<?php echo $form->error($model,'complement'); ?>
 	</div>
 
-	<div class="row">
+	<div class="row-fluid">
 		<?php echo $form->labelEx($model,'address_number'); ?>
 		<?php echo $form->textField($model,'address_number',array('size'=>45,'maxlength'=>45)); ?>
 		<?php echo $form->error($model,'address_number'); ?>
 	</div>
 
-	<div class="row">
+	<div class="row-fluid">
 		<?php echo $form->labelEx($model,'city'); ?>
 		<?php echo $form->textField($model,'city',array('size'=>45,'maxlength'=>45)); ?>
 		<?php echo $form->error($model,'city'); ?>
 	</div>
 
-	<div class="row">
+	<div class="row-fluid">
 		<?php echo $form->labelEx($model,'neighborhood'); ?>
 		<?php echo $form->textField($model,'neighborhood',array('size'=>45,'maxlength'=>45)); ?>
 		<?php echo $form->error($model,'neighborhood'); ?>
 	</div>
 
-	<div class="row">
+	<div class="row-fluid">
 		<?php echo $form->labelEx($model,'state_acronym'); 
 		$select =array('empty');
    	    echo $form->dropDownList($model, 'state_acronym',

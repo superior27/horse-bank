@@ -3,7 +3,7 @@
 /* @var $model Bigdate */
 /* @var $form CActiveForm */
 ?>
-
+<?php $this->beginContent('//layouts/main'); ?>
 <div class="form">
 
 <?php $form=$this->beginWidget('CActiveForm', array(
