@@ -1,12 +1,12 @@
 <?php
 /* @var $this BigdateController */
 /* @var $model Bigdate */
-
+/*
 $this->breadcrumbs=array(
 	'Cadastrar Cliente'=>array('index'),
 	'Cadastrar',
 );
-
+*/
 ?>
 
 <h1>Cadastrar Cliente</h1>

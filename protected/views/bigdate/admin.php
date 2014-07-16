@@ -1,11 +1,11 @@
 <?php
 /* @var $this BigdateController */
 /* @var $model Bigdate */
-
+/*
 $this->breadcrumbs=array(
 	'Cadastrar Cliente'=>array('index'),
 	'Relatório',
-);
+);*/
 
 
 Yii::app()->clientScript->registerScript('search', "
@@ -64,7 +64,8 @@ or <b>=</b>) no início de cada um dos seus valores de pesquisa para especificar
 		'state_acronym',
 		*/
 		array(
-			'class'=>'CButtonColumn',
+			'class'=>'bootstrap.widgets.TbButtonColumn',
+  			'htmlOptions'=>array('style'=>'width: 50px'),
 		),
 	),
 )); ?>
