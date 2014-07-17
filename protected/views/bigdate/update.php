@@ -3,9 +3,9 @@
 /* @var $model Bigdate */
 
 $this->breadcrumbs=array(
-	'Bigdates'=>array('index'),
+	'Clientes'=>array('index'),
 	$model->id=>array('view','id'=>$model->id),
-	'Update',
+	'Atualizar',
 );
 
 $this->menu=array(
@@ -16,6 +16,6 @@ $this->menu=array(
 );
 ?>
 
-<h1>Update Bigdate <?php echo $model->id; ?></h1>
+<h1>Atualizar Informações <?php echo $model->id; ?></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

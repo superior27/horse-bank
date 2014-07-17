@@ -28,7 +28,6 @@ $this->breadcrumbs=array(
 		'status',
 		'value',
 		'commission',
-		'commission_value',
 		'bank',
 		'address',
 		'complement',

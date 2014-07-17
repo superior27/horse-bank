@@ -35,7 +35,7 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 	<div class="">
 		<?php $this->widget('bootstrap.widgets.TbButton', array(
             'buttonType'=>'submit',
-            'type'=>'action',
+            'type'=>'primary',
             'label'=>'Entrar',
         )); ?>
 	</div>
