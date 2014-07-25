@@ -3047,3 +3047,33 @@ Stack trace:
 REQUEST_URI=/workspace_php/horse-bank/index.php/bigdate/create
 HTTP_REFERER=http://127.0.0.1/workspace_php/horse-bank/index.php
 ---
+2014/07/25 03:03:52 [error] [exception.CException] exception 'CException' with message 'CActiveForm and its behaviors do not have a method or closure named "dataField".' in /var/www/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/workspace_php/horse-bank/protected/views/bigdate/_form.php(133): CComponent->__call('dataField', Array)
+#1 /var/www/workspace_php/horse-bank/protected/views/bigdate/_form.php(133): CActiveForm->dataField(Object(Bigdate), 'emission_date')
+#2 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/worksp...')
+#3 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/worksp...', Array, true)
+#4 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/worksp...', Array, true)
+#5 /var/www/workspace_php/horse-bank/protected/views/bigdate/create.php(14): CController->renderPartial('_form', Array)
+#6 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/worksp...')
+#7 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/worksp...', Array, true)
+#8 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/worksp...', Array, true)
+#9 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#10 /var/www/workspace_php/horse-bank/protected/controllers/BigdateController.php(79): CController->render('create', Array)
+#11 /var/www/yii/framework/web/actions/CInlineAction.php(49): BigdateController->actionCreate()
+#12 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#15 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#19 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#21 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('bigdate/create')
+#22 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#23 /var/www/workspace_php/horse-bank/index.php(15): CApplication->run()
+#24 {main}
+REQUEST_URI=/workspace_php/horse-bank/index.php/bigdate/create
+HTTP_REFERER=http://127.0.0.1/workspace_php/horse-bank/index.php/site/login
+---

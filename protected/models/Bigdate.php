@@ -77,7 +77,7 @@ class Bigdate extends CActiveRecord
 			'id' => 'ID',
 			'name_client' => 'Nome',
 			'nick_name' => 'Apelido',
-			'cpf' => 'Cpf',
+			'cpf' => 'CPF',
 			'phone' => 'Telefone',
 			'table' => 'Tabela',
 			'agreement' => 'Convênio',

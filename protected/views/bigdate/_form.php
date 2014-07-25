@@ -130,7 +130,7 @@
 
 		<div class="span3">
 			<?php echo $form->labelEx($model,'emission_date'); ?>
-			<?php echo $form->textField($model,'emission_date'); ?>
+			<?php echo $form->dateField($model,'emission_date'); ?>
 			<?php echo $form->error($model,'emission_date'); ?>
 		</div>
 	</div>
@@ -140,14 +140,19 @@
 	<div class="row-fluid">
 		<div class="span3">
 			<?php echo $form->labelEx($model,'liberation_date'); ?>
-			<?php echo $form->textField($model,'liberation_date'); ?>
+			<?php echo $form->dateField($model,'liberation_date'); ?>
 			<?php echo $form->error($model,'liberation_date'); ?>
 		</div>
 
 		<div class="span3">
-			<?php echo $form->labelEx($model,'term'); ?>
-			<?php echo $form->textField($model,'term',array('size'=>45,'maxlength'=>45)); ?>
-			<?php echo $form->error($model,'term'); ?>
+			<?php 
+			echo $form->labelEx($model,'term');
+		 	$select =array('empty');
+		    echo $form->dropDownList($model, 'term',
+		 		array('6' => '6', '12'=>'12','18'=>'18','24'=>'24','36'=>'36',
+		 			'48'=>'48','58'=>'58','59'=>'59','60'=>'60'),
+		 		array('empty' => '(Defina o Prazo)'));
+	 		?>
 		</div>
 
 		<div class="span3">
@@ -166,12 +171,7 @@
 </br>
 
 	<div class="row-fluid">
-		<div class="span3">
-			<?php echo $form->labelEx($model,'commission'); ?>
-			<?php echo $form->textField($model,'commission'); ?>
-			<?php echo $form->error($model,'commission'); ?>
-		</div>
-
+		
 	
 		<div class="span3">
 			<?php 
