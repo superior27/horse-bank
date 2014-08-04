@@ -26,6 +26,7 @@
  * @property string $city
  * @property string $neighborhood
  * @property string $state_acronym
+ * @property string $broker
  */
 class Bigdate extends CActiveRecord
 {
@@ -49,7 +50,7 @@ class Bigdate extends CActiveRecord
 			array('value, commission, commission_value', 'numerical'),
 			array('name_client, cpf, table, agreement, contract, term, status, bank, complement, address_number, city, neighborhood', 'length', 'max'=>45),
 			array('nick_name', 'length', 'max'=>256),
-			array('phone, address, state_acronym', 'length', 'max'=>255),
+			array('phone, address, state_acronym, broker', 'length', 'max'=>255),
 			array('emission_date, liberation_date', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
@@ -96,6 +97,7 @@ class Bigdate extends CActiveRecord
 			'city' => 'Cidade',
 			'neighborhood' => 'Bairro',
 			'state_acronym' => 'Estado',
+			'broker' => 'Corretor'
 		);
 	}
 
@@ -139,6 +141,8 @@ class Bigdate extends CActiveRecord
 		$criteria->compare('city',$this->city,true);
 		$criteria->compare('neighborhood',$this->neighborhood,true);
 		$criteria->compare('state_acronym',$this->state_acronym,true);
+		$criteria->compare('broker',$this->broker,true);
+
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

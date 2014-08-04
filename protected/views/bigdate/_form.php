@@ -129,15 +129,24 @@
 		</div>
 
 		<div class="span3">
-			<?php echo $form->labelEx($model,'emission_date'); ?>
-			<?php echo $form->dateField($model,'emission_date'); ?>
-			<?php echo $form->error($model,'emission_date'); ?>
+			<?php echo $form->labelEx($model,'broker'); ?>
+			<?php echo $form->textField($model,'broker'); ?>
+			<?php echo $form->error($model,'broker'); ?>
 		</div>
+
+		
 	</div>
 
 </br>
 
 	<div class="row-fluid">
+
+		<div class="span3">
+			<?php echo $form->labelEx($model,'emission_date'); ?>
+			<?php echo $form->dateField($model,'emission_date'); ?>
+			<?php echo $form->error($model,'emission_date'); ?>
+		</div>
+
 		<div class="span3">
 			<?php echo $form->labelEx($model,'liberation_date'); ?>
 			<?php echo $form->dateField($model,'liberation_date'); ?>
@@ -161,17 +170,18 @@
 			<?php echo $form->error($model,'status'); ?>
 		</div>
 
-		<div class="span3">
-			<?php echo $form->labelEx($model,'value'); ?>
-			<?php echo $form->textField($model,'value'); ?>
-			<?php echo $form->error($model,'value'); ?>
-		</div>
+	
 	</div>
 
 </br>
 
 	<div class="row-fluid">
-		
+			
+		<div class="span3">
+			<?php echo $form->labelEx($model,'value'); ?>
+			<?php echo $form->textField($model,'value'); ?>
+			<?php echo $form->error($model,'value'); ?>
+		</div>
 	
 		<div class="span3">
 			<?php 
